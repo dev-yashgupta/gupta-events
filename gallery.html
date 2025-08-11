@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Gupta Tent House and Events</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Gupta Tent House & Events</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="gallery.html" class="nav-link active">Gallery</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header" style="background-image: url('https://images.pexels.com/photos/1024993/pexels-photo-1024993.jpeg?auto=compress&cs=tinysrgb&w=1600')">
+        <div class="header-content">
+            <h1>Event Gallery</h1>
+            <p>Explore our portfolio of successful events and celebrations</p>
+        </div>
+    </section>
+
+    <!-- Gallery Filters -->
+    <section class="gallery-filters">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All Events</button>
+                <button class="filter-btn" data-filter="wedding">Weddings</button>
+                <button class="filter-btn" data-filter="corporate">Corporate</button>
+                <button class="filter-btn" data-filter="party">Parties</button>
+                <button class="filter-btn" data-filter="decoration">Decorations</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Grid -->
+    <section class="gallery-main">
+        <div class="container">
+            <div class="gallery-grid-main">
+                <div class="gallery-item-main" data-category="wedding">
+                    <img src="https://images.pexels.com/photos/1444442/pexels-photo-1444442.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Royal Wedding Setup" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h4>Royal Wedding</h4>
+                        <p>Traditional Indian Wedding Ceremony</p>
+                        <button class="view-btn" onclick="openModal(this)">View</button>
+                    </div>
+                </div>
+                
+                <div class="gallery-item-main" data-category="corporate">
+                    <img src="https://images.pexels.com/photos/1449773/pexels-photo-1449773.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Corporate Event" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h4>Corporate Gala</h4>
+                        <p>Annual Company Awards Night</p>
+                        <button class="view-btn" onclick="openModal(this)">View</button>
+                    </div>
+                </div>
+
+                <div class="gallery-item-main" data-category="party">
+                    <img src="https://images.pexels.com/photos/587741/pexels-photo-587741.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Birthday Party" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h4>Birthday Celebration</h4>
+                        <p>Garden Party Theme Setup</p>
+                        <button class="view-btn" onclick="openModal(this)">View</button>
+                    </div>
+                </div>
+
+                <div class="gallery-item-main" data-category="wedding">
+                    <img src="https://images.pexels.com/photos/1190297/pexels-photo-1190297.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Wedding Reception" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h4>Wedding Reception</h4>
+                        <p>Elegant Evening Celebration</p>
+                        <button class="view-btn" onclick="openModal(this)">View</button>
+                    </div>
+                </div>
+
+                <div class="gallery-item-main" data-category="decoration">
+                    <img src="https://images.pexels.com/photos/1190298/pexels-photo-1190298.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Floral Decoration" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h4>Floral Arrangements</h4>
+                        <p>Custom Wedding Decorations</p>
+                        <button class="view-btn" onclick="openModal(this)">View</button>
+                    </div>
+                </div>
+
+                <div class="gallery-item-main" data-category="wedding">
+                    <img src="https://images.pexels.com/photos/169198/pexels-photo-169198.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Mehendi Ceremony" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h4>Mehendi Ceremony</h4>
+                        <p>Traditional Pre-Wedding Event</p>
+                        <button class="view-btn" onclick="openModal(this)">View</button>
+                    </div>
+                </div>
+
+                <div class="gallery-item-main" data-category="corporate">
+                    <img src="https://images.pexels.com/photos/1059905/pexels-photo-1059905.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Conference Setup" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h4>Business Conference</h4>
+                        <p>Professional Meeting Setup</p>
+                        <button class="view-btn" onclick="openModal(this)">View</button>
+                    </div>
+                </div>
+
+                <div class="gallery-item-main" data-category="party">
+                    <img src="https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Catering Setup" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h4>Catering Service</h4>
+                        <p>Buffet Setup for Large Events</p>
+                        <button class="view-btn" onclick="openModal(this)">View</button>
+                    </div>
+                </div>
+
+                <div class="gallery-item-main" data-category="decoration">
+                    <img src="https://images.pexels.com/photos/1024993/pexels-photo-1024993.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Stage Decoration" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h4>Stage Setup</h4>
+                        <p>Wedding Stage Decoration</p>
+                        <button class="view-btn" onclick="openModal(this)">View</button>
+                    </div>
+                </div>
+
+                <div class="gallery-item-main" data-category="wedding">
+                    <img src="https://images.pexels.com/photos/1444442/pexels-photo-1444442.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Sangeet Night" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h4>Sangeet Night</h4>
+                        <p>Musical Evening Celebration</p>
+                        <button class="view-btn" onclick="openModal(this)">View</button>
+                    </div>
+                </div>
+
+                <div class="gallery-item-main" data-category="corporate">
+                    <img src="https://images.pexels.com/photos/1449773/pexels-photo-1449773.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Product Launch" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h4>Product Launch</h4>
+                        <p>Corporate Product Unveiling</p>
+                        <button class="view-btn" onclick="openModal(this)">View</button>
+                    </div>
+                </div>
+
+                <div class="gallery-item-main" data-category="party">
+                    <img src="https://images.pexels.com/photos/587741/pexels-photo-587741.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Anniversary Party" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h4>Anniversary Celebration</h4>
+                        <p>Golden Anniversary Party</p>
+                        <button class="view-btn" onclick="openModal(this)">View</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal for Image Viewing -->
+    <div id="imageModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <img id="modalImage" src="" alt="">
+            <div class="modal-info">
+                <h3 id="modalTitle"></h3>
+                <p id="modalDescription"></p>
+            </div>
+            <div class="modal-nav">
+                <button id="prevBtn">❮ Previous</button>
+                <button id="nextBtn">Next ❯</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Testimonials -->
+    <section class="gallery-testimonials">
+        <div class="container">
+            <h2 class="section-title">What Our Clients Say</h2>
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p>"Gupta Tent House made our wedding absolutely perfect! Every detail was handled with care and professionalism."</p>
+                    <div class="client-info">
+                        <strong>Rahul & Priya Sharma</strong>
+                        <span>Wedding Clients</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p>"Outstanding service for our corporate event. The team exceeded our expectations in every way."</p>
+                    <div class="client-info">
+                        <strong>Tech Solutions Inc.</strong>
+                        <span>Corporate Client</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p>"Professional, creative, and reliable. They turned our vision into reality for our anniversary celebration."</p>
+                    <div class="client-info">
+                        <strong>Mr. & Mrs. Kumar</strong>
+                        <span>Anniversary Celebration</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Gupta Tent House & Events</h3>
+                    <p>Creating memorable moments since 2008. Your trusted partner for all event management needs.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">📘</a>
+                        <a href="#" class="social-link">📷</a>
+                        <a href="#" class="social-link">🐦</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html">Wedding Planning</a></li>
+                        <li><a href="services.html">Corporate Events</a></li>
+                        <li><a href="services.html">Tent Rental</a></li>
+                        <li><a href="services.html">Catering</a></li>
+                        <li><a href="services.html">Photography</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="contact-info">
+                        <p>📧 info@guptatenthouse.com</p>
+                        <p>📱 +91 98765 43210</p>
+                        <p>📍 Main Market, Delhi, India</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Gupta Tent House & Events. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

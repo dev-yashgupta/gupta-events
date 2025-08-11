@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gupta Tent House and Events - Premier Event Management</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Gupta Tent House & Events</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link active">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-slider">
+            <div class="slide active" style="background-image: url('https://images.pexels.com/photos/1190298/pexels-photo-1190298.jpeg?auto=compress&cs=tinysrgb&w=1600')">
+                <div class="slide-content">
+                    <h1>Creating Unforgettable Moments</h1>
+                    <p>Professional event management services for all your special occasions</p>
+                    <a href="contact.html" class="cta-btn">Plan Your Event</a>
+                </div>
+            </div>
+            <div class="slide" style="background-image: url('https://images.pexels.com/photos/169198/pexels-photo-169198.jpeg?auto=compress&cs=tinysrgb&w=1600')">
+                <div class="slide-content">
+                    <h1>Premium Tent & Decoration Services</h1>
+                    <p>Transform any space into a magical venue with our expert team</p>
+                    <a href="services.html" class="cta-btn">View Services</a>
+                </div>
+            </div>
+            <div class="slide" style="background-image: url('https://images.pexels.com/photos/1024993/pexels-photo-1024993.jpeg?auto=compress&cs=tinysrgb&w=1600')">
+                <div class="slide-content">
+                    <h1>Your Dream Wedding Awaits</h1>
+                    <p>Making your special day perfect with attention to every detail</p>
+                    <a href="gallery.html" class="cta-btn">View Gallery</a>
+                </div>
+            </div>
+        </div>
+        <div class="slider-nav">
+            <button class="prev-btn">❮</button>
+            <button class="next-btn">❯</button>
+        </div>
+        <div class="slider-dots">
+            <span class="dot active" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </section>
+
+    <!-- Services Preview -->
+    <section class="services-preview">
+        <div class="container">
+            <h2 class="section-title">Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <img src="https://images.pexels.com/photos/1444442/pexels-photo-1444442.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Wedding Planning">
+                    <div class="card-content">
+                        <h3>Wedding Planning</h3>
+                        <p>Complete wedding management from concept to celebration</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <img src="https://images.pexels.com/photos/1449773/pexels-photo-1449773.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Corporate Events">
+                    <div class="card-content">
+                        <h3>Business Events</h3>
+                        <p>Professional corporate event management and catering</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <img src="https://images.pexels.com/photos/587741/pexels-photo-587741.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Tent Rental">
+                    <div class="card-content">
+                        <h3>Tent Rental</h3>
+                        <p>Premium quality tents for all types of events</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <img src="https://images.pexels.com/photos/1190297/pexels-photo-1190297.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Decoration">
+                    <div class="card-content">
+                        <h3>Decoration</h3>
+                        <p>Beautiful decorations to match your event theme</p>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center">
+                <a href="services.html" class="btn-secondary">View All Services</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="why-choose-us">
+        <div class="container">
+            <div class="content-wrapper">
+                <div class="text-content">
+                    <h2>Why Choose Gupta Tent House & Events?</h2>
+                    <div class="feature">
+                        <div class="feature-icon">✨</div>
+                        <div>
+                            <h4>35+ Years Experience</h4>
+                            <p>Trusted by thousands of families for their special moments</p>
+                        </div>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">🎯</div>
+                        <div>
+                            <h4>End-to-End Service</h4>
+                            <p>From planning to execution, we handle everything</p>
+                        </div>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">💎</div>
+                        <div>
+                            <h4>Premium Quality</h4>
+                            <p>High-quality equipment and decorations for every event</p>
+                        </div>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">⚡</div>
+                        <div>
+                            <h4>24/7 Support</h4>
+                            <p>Round-the-clock support for all your event needs</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="image-content">
+                    <img src="https://images.pexels.com/photos/1059905/pexels-photo-1059905.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Event Setup">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Preview -->
+    <section class="gallery-preview">
+        <div class="container">
+            <h2 class="section-title">Recent Events</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://images.pexels.com/photos/1444442/pexels-photo-1444442.jpeg?auto=compress&cs=tinysrgb&w=500" alt="Wedding Event">
+                    <div class="overlay">
+                        <h4>Royal Wedding</h4>
+                        <p>Traditional Indian Wedding</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.pexels.com/photos/1449773/pexels-photo-1449773.jpeg?auto=compress&cs=tinysrgb&w=500" alt="Corporate Event">
+                    <div class="overlay">
+                        <h4>Corporate Gala</h4>
+                        <p>Annual Company Celebration</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.pexels.com/photos/587741/pexels-photo-587741.jpeg?auto=compress&cs=tinysrgb&w=500" alt="Birthday Party">
+                    <div class="overlay">
+                        <h4>Birthday Celebration</h4>
+                        <p>Garden Party Setup</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.pexels.com/photos/1190297/pexels-photo-1190297.jpeg?auto=compress&cs=tinysrgb&w=500" alt="Reception">
+                    <div class="overlay">
+                        <h4>Wedding Reception</h4>
+                        <p>Elegant Evening Setup</p>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center">
+                <a href="gallery.html" class="btn-secondary">View Full Gallery</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact CTA -->
+    <section class="contact-cta">
+        <div class="container">
+            <h2>Ready to Plan Your Perfect Event?</h2>
+            <p>Get in touch with us today for a free consultation</p>
+            <div class="cta-buttons">
+                <a href="contact.html" class="cta-btn">Get Quote</a>
+                <a href="tel:+919040603062" class="btn-secondary">Call Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Gupta Tent House & Events</h3>
+                    <p>Creating memorable moments since 1990. Your trusted partner for all event management needs.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">📘</a>
+                        <a href="#" class="social-link">📷</a>
+                        <a href="#" class="social-link">🐦</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html">Wedding Planning</a></li>
+                        <li><a href="services.html">Corporate Events</a></li>
+                        <li><a href="services.html">Tent Rental</a></li>
+                        <li><a href="services.html">Catering</a></li>
+                        <li><a href="services.html">Photography</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="contact-info">
+                        <p>📧 mahabirg415@gmail.com</p>
+                        <p>📱 +91 9040603062</p>
+                        <p>📍 Bisra, Sundergarh, Odisha, India</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Gupta Tent House & Events. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
