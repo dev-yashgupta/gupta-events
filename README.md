@@ -9,7 +9,6 @@ A professional, fully responsive website for **Gupta Tent House & Events**, a pr
 **Organization:** Gupta Tent House & Events  
 **Location:** Bisra-Rourkela, Sundergarh, Odisha, India - 770036  
 **Founded:** 1990 (35+ years of experience)  
-**Contact:** +91 9040603062 | mahabirg415@gmail.com  
 
 This is a **static website** built with HTML5, CSS3, and vanilla JavaScript - no backend dependencies required.
 
